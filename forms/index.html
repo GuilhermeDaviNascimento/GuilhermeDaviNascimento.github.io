@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <h1>Travel Reservation Form</h1>
+    <p>Full Name*:
+    <br><input type="text" placeholder="FirstName & LastName" required>
+    </p>
+    <p>Email Adress*: 
+    <br><input type="email" name="email" id="email" placeholder="Email" required>
+    <p>Select Tour Package*:
+        <br><select name="package" id="package">
+            <option value="goa">Goa</option>
+            <option value="andhra">Andhra Pradesh</option>
+            <option value="haryana">Haryana</option>
+            <option value="assam">Assam</option>
+        </select></p>
+    <p>Arrivel Date*: 
+    <br><input id="date" type="date" required></p>
+    <p>Number of Persons*:
+        <br><input type="number" name="" id="" max="9" min="1" placeholder="Persons" required>
+    </p>
+    <p>What would you want to avail?*:
+        <br>Boarding<input type="checkbox" name="" id="">
+        <br>Fooding<input type="checkbox" name="" id="">
+        <br>Sight Seeing<input type="checkbox" name="" id="">
+    </p>
+    <p>Discount Coupon Code:
+        <br><input type="text" pattern="[A-Za-z]{6}">
+    </p>
+    <p>Terms and Conditions* <br>
+        <input type="radio" name="terms" id="" required> I agree
+        <input type="radio" name="terms" id="" required> I disagree
+    </p>
+    <input type="submit" value="Complete Reservation">
+</form>
+</body>
+</html>
