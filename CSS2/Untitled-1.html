@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td><span class="Text-Block">Matricula:</span> <input id="txtMatricula" class="Text-Box" readonly></td>
+            <td><button id="Exibir" onclick="exibir()">Exibir</button></td>
+        </tr>
+        <tr>
+            <td><span class="Text-Block">Nome:</span> <input id="txtNome" class="Text-Box" readonly></td>
+            <td><button id="Atualizar" onclick="atualizar()" disabled>Atualizar</button></td>
+        </tr>
+        <tr>
+            <td><span class="Text-Block">Email:</span> <input id="txtEmail" class="Text-Box" readonly></td>
+            <td><button id="Excluir" onclick="deletar()" disabled>Excluir </button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button id="Voltar" onclick="voltar()" disabled>Voltar</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button id="Proximo" onclick="proximo()" disabled>Proximo</button></td>
+        </tr>
+    </table>
+</body>
+</html>
