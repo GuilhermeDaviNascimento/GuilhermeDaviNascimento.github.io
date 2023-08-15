@@ -609,7 +609,7 @@
   font-style: normal;
   font-weight: 400;
 }
-@media(max-width: 1600px) {
+@media(max-width: 1650px) {
   .frame3-text {
     left: 80px;
   }
