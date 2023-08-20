@@ -8,8 +8,11 @@
   opacity: 1;
   animation: blink .7s infinite;
 }
-
 @keyframes blink {
   0%, 100% {opacity: 1;}
   50% {opacity: 0};
+}
+.fotinha{
+  border-radius: 100px 10px 100px 10px;
+  width: 400px;
 }
