@@ -1,1 +1,0 @@
-# GuilhermeDaviNascimento.github.io
