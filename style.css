@@ -1,0 +1,15 @@
+#typewriter{
+  color: rgb(99 115 129 / var(--tw-text-opacity));
+}
+#typewriter:after{
+  content: "|";
+  margin-left: 3px;
+  font-weight: bold;
+  opacity: 1;
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0};
+}
