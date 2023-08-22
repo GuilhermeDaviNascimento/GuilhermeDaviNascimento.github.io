@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 </head>
 <body>
     <div class="container">
@@ -27,24 +29,27 @@
                 </li><br>
                 <li>
                     <label for="">* Which option best describes your current role?</label>
-                    <select name="" id="">
+                    <select name="" id="selectid">
                         <option value="">Student</option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="">Professor</option>
+                        <option value="">Developer</option>
                     </select>
                 </li><br>
                 <li>
                     <label for="">* How likely is that you would recommend freeCodeCamp to a friend?</label> 
                     <div style="text-align: left; height: 70px;">
-                        <input type="radio" name="radio" id=""> Definitely<br>
-                        <input type="radio" name="radio" id=""> Maybe<br>
-                        <input type="radio" name="radio" id=""> Not sure
+                        <input type="radio" name="radio" id=""> Definitely 😀<br>
+                        <input type="radio" name="radio" id=""> Maybe 🤨<br>
+                        <input type="radio" name="radio" id=""> Not sure 😔 
                     </div>
                 </li><br>
                 <li>
                     <label for="">* What do you like most in FCC?</label>  
-                    <select name="" id="">
-                        <option value="">Select an option</option>
+                    <select name="" id="selectid">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="" >Persons</option>
+                        <option value="" >Professors</option>
+                        <option value="" >Didactic</option>
                     </select>
                 </li><br>
                 <li>
@@ -53,8 +58,12 @@
                         <input type="checkbox" name="" id=""> Front-end Projects<br>
                         <input type="checkbox" name="" id=""> Back-end Projects<br>
                         <input type="checkbox" name="" id=""> Data Visualization
-                    </div>
-                </div>
+                    </div> 
+                </li>
+                <li id="submit">
+                    <span>
+                        <input type="submit" value="Enviar" id="confetti-button">
+                    </span>
                 </li>
             </ul>
         </div>
