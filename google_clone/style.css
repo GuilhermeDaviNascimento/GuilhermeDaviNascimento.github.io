@@ -45,6 +45,7 @@ input, input:focus, select:focus{
 svg, img{
     cursor: pointer;
     color: #615f5b;
+    filter: none;
 }
 #lens{
     padding-right: 10px;
