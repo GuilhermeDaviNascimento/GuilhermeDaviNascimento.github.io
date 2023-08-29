@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid">
+        <div class="padding top">
+            <h1 class="textofino">Olá</h1>
+            <h1 class="sobre-mim">
+                Meu nome é Guilherme, um futuro desenvolvedor Front-End
+                fascinado pelo mundo da programação e tecnologia.
+            </h1>
+            <h3 class="textofino">Maceió, AL</h3>
+            <div>
+                <a href="https://github.com/GuilhermeDaviNascimento?tab=repositories" target="_blank"><mark>GitHub</mark></a>
+                <a href="https://codepen.io/Guilherme-Davi-the-vuer" target="_blank"><mark>CodePen</mark></a>
+                <a href="https://twitter.com/g_quit" target="_blank"><mark>Twitter</mark></a>
+                <a href="mailto:gdsn1@aluno.ifal.edu.br" target="_blank"><mark>Email</mark></a>
+                <hr>
+            </div>
+        </div>
+        <div class="padding">
+            <h2>Competências</h2>
+            <div class="textalign">
+                <div class="expirenciastexto">
+                    <h3 class="textofino"><strong>HTML & CSS</strong> <br>
+                    Avançado</h3>
+                </div>
+                <p>HTML e CSS trabalham juntos para criar páginas da web visualmente atraentes e bem estruturadas. O HTML fornece a base estrutural do conteúdo, enquanto o CSS define como esse conteúdo deve ser exibido aos visitantes, permitindo a criação de layouts atraentes e responsivos.</p>
+            </div>
+            <div class="textalign">
+                <div class="expirenciastexto">
+                    <h3 class="textofino"><strong>Javascript</strong> <br>
+                    Avançado</h3>
+                </div>
+                <p>O JavaScript é uma linguagem de programação amplamente usada para tornar as páginas da web interativas e dinâmicas. Ao contrário do HTML e do CSS, que lidam com a estrutura e o estilo de uma página, o JavaScript permite adicionar comportamento e interatividade a ela.</p>
+            </div>
+            <div class="textalign">
+                <div class="expirenciastexto">
+                    <h3 class="textofino"><strong>Figma</strong> <br>
+                    Avançado</h3>
+                </div>
+                <p>O Figma é uma plataforma de design colaborativo baseada na web, amplamente utilizada por designers de interface de usuário, designers de experiência do usuário e equipes de design em geral. Diferente de aplicativos de design tradicionais que precisam ser instalados localmente em um computador, o Figma opera diretamente no navegador, permitindo uma colaboração em tempo real e fácil acesso a partir de diferentes dispositivos.</p>
+            </div>
+            <div class="textalign">
+                <div class="expirenciastexto">
+                    <h3 class="textofino"><strong>Adobe Photoshop</strong> <br>
+                    Avançado</h3>
+                </div>
+                <p>O Photoshop é um software de edição de imagens amplamente utilizado, desenvolvido pela Adobe Systems. Ele é amplamente reconhecido por suas poderosas ferramentas de manipulação de imagens e é utilizado por profissionais e entusiastas para criar, editar e aprimorar imagens de diversas maneiras.</p>
+            </div>
+            <h2>Educação</h2>
+            <div class="textalign">
+                <div class="expirenciastexto">
+                    <h3 class="textofino"><strong>IFAL</strong> <br>
+                    2022-2025</h3>
+                </div>
+                <p>
+                    O IFAL (Instituto Federal de Educação, Ciência e Tecnologia de Alagoas) é uma instituição de ensino pública federal localizada no estado de Alagoas, Brasil. Fundado em 2008, o IFAL faz parte da rede de Institutos Federais do Brasil, que oferecem educação profissional, tecnológica e superior em diversas áreas.</p>
+            </div>
+        </div>
+</body>
+<style>
+    body{
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+    }
+    .grid{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 100%;
+    }
+    .sobre-mim{
+        width: 35%;
+        font-size: 28px;
+    }
+    .padding{
+        margin: 10px 30px 0 30px;
+    }
+    mark{
+        background-color: #e6e6fa;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .textalign{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    .expirenciastexto{
+        width: 10%;
+        padding-right: 1%;
+    }
+    p{
+        width: 100%;
+    }
+    .textofino{
+        font-weight: 200;
+    }
+    a, a:link, a:visited, a:hover{
+    color: black;
+    padding: 0px 16px 0px 0px;
+    text-decoration:underline;
+    }
+    @media (max-width: 1000px){
+        .expirenciastexto{
+        width: 10%;
+        padding-right: 5%;
+    }
+    }
+    @media (max-width: 760px){
+        .expirenciastexto{
+        width: 10%;
+        padding-right: 10%;
+    }
+    .sobre-mim{
+        width: 100%;
+        font-size: 28px;
+    }
+    }
+    @media (max-width: 580px){
+    .expirenciastexto{
+        width: 10%;
+        padding-right: 20%;
+    }
+    }
+    @media (max-width: 420px){
+    .expirenciastexto{
+        width: 10%;
+        padding-right: 25%;
+    }
+    }
+    @media (max-width: 320px){
+        .expirenciastexto{
+        width: 10%;
+        padding-right: 30%;
+    }
+    }
+</style>
+</html>
