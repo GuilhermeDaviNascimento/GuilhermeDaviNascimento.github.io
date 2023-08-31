@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="texto-cabecario">IFormações</h1>
+    </header>
+    <main>
+        <section class="conteiner">
+            <div class="noticia-1">
+                <span class="noticias">
+                    <figure>
+                        <img src="amo.jfif" alt="">
+                        <h1>AMO o projeto mais promissor de Alagoas? 🤔 <br><br> Entenda!</h1>
+                    </figure>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </span>
+        </div>
+        <div class="noticia-2">
+            <span class="noticias">
+                <figure>
+                    <img src="https://www2.ifal.edu.br/campus/arapiraca/noticias/inscricoes-abertas-em-cursos-de-curta-duracao-de-desenvolvimento-de-aplicativos-e-introducao-a-programacao/cursos-de-curta-duracao-arapiraca-e-maceio/@@images/6e94e255-2e73-494e-ade5-ac5335536ce0.png" alt="">
+                    <h1>Abre inscrições para o curso de Desenvolvimento de Aplicativos <br><br> Entenda!</h1>
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </span>
+        </div>
+        <div class="noticia-3">
+            <span class="noticias">
+                <figure>
+                    <h1>Napne divulga programação do Setembro Azul <br><br> Entenda!</h1>
+                </figure>
+            </span>
+        </div>
+        <div class="noticia-4">
+            <span class="noticias">
+                <figure>
+                    <h1>PRPPI divulga resultado final de contemplados com bolsas Pibic e Pibiti <br><br> Entenda!</h1>
+                </figure>
+            </span>
+        </div>
+        <div class="noticia-5">
+            <span class="noticias">                
+                <figure>
+                    <img src="https://www2.ifal.edu.br/noticias/prata-e-bronze-nove-alunos-do-ifal-sao-premiados-pela-17a-edicao-da-obmep/welbert-conquistou-medalha-de-bronze/@@images/871d0f1b-ad78-4b3b-a4dd-0bc904a1f438.png" alt="">
+                    <h1>Prata e bronze: nove alunos do Ifal são premiados pela 17ª edição da OBMep <br><br> Entenda!</h1>
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </span>
+        </div>
+        <div class="noticia-6">
+            <figure>
+                <h1>Abertas inscrições para curso de Qualificação Profissional de Eletricista de Sistemas de Energias Renováveis <br><br> Entenda!</h1>
+            </figure>
+            <span class="noticias">
+            </span>
+        </div>
+        <div class="noticia-7">
+            <span class="noticias">                
+                <figure>
+                    <h1>PRPPI tem resultados preliminares consolidados de Pibic e Pibiti <br><br> Entenda!</h1>
+                </figure>
+            </span>
+        </div>
+    </section>
+    </main>
+</body>
+<style>
+    html{
+        font-family: 'Inter', sans-serif;
+        color: white;
+    }
+    body{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #404258;
+    }
+    main{
+        width: 80%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    .conteiner{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    div{
+        background-color: #50577A;
+        outline: solid 2px #6B728E;
+        border-radius: 10px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    div:hover{
+        transition: transform 100ms ease-in-out;
+        transform: scale(1.01);
+    }
+    img{
+        width: 40%;
+        height: 40%;
+        border-radius: 10px;
+    }
+    figure{
+        display: flex;
+    }
+    header{
+        text-align: center;
+        width: 100%;
+        height: 10vh;
+        position: flex;
+        vertical-align: bottom;
+    }
+    .noticia-1{
+        grid-area: 1 / 1 / 3 / 3;
+        background-image: linear-gradient(to top, transparent 0%, #50577A 50%), url(amofundo.jfif);
+        background-position: center;
+    }
+    .noticia-2{
+        grid-area: 1 / 3 / 2 / 5; 
+    }
+    .noticia-3{
+        grid-area: 2 / 3 / 3 / 4;
+        background-image: linear-gradient(to top, transparent 0%, #50577A 50%), url(https://www2.ifal.edu.br/noticias/napne-divulga-programacao-do-setembro-azul-nos-campi-benedito-bentes-palmeira-e-piranhas-confira/confira-programacao-do-setembro-azul-no-ifal/@@images/178461b3-e0fa-45c4-b717-e944768d995a.jpeg  );
+                background-position: center;
+    }
+    .noticia-4{
+        grid-area: 2 / 4 / 3 / 5;
+        background-image: linear-gradient(to top, transparent 0%, #50577A 50%), url(https://www2.ifal.edu.br/noticias/prppi-tem-resultados-preliminares-consolidados-de-pibic-e-pibiti/reesultados-preliminares-consolidados.jpeg/@@images/0d44d60a-a365-4838-a858-bef141e4849c.jpeg);
+                background-position: center;
+    }
+    .noticia-5{
+        grid-area: 3 / 3 / 3 / 5;
+    }
+    .noticia-6{
+        grid-area: 3 / 1 / 3 / 2;
+        background-image: linear-gradient(to top, transparent 0%, #50577A 50%), url(https://www2.ifal.edu.br/noticias/abertas-inscricoes-para-curso-de-qualificacao-profissional-de-eletricista-de-sistemas-de-energias-renovaveis/qualificacao-profissional-de-eletricista-de-sistemas-de-energias-renovaveis/@@images/60c8cb79-7d01-4b72-bfb2-1161cd8048c1.png);
+        background-position: center;
+    }
+    .noticia-7{
+        grid-area: 3 / 2 / 3 / 3;
+        background-image: linear-gradient(to top, transparent 0%, #50577A 50%), url(https://www.ifpb.edu.br/noticias/2023/08/divulgado-resultados-preliminares-dos-editais-de-pesquisa/resultado-preliminar.png/@@images/3903bbcb-93a6-4166-88da-e281e4d2cdc6.png);
+        background-position: center;
+    }
+    h1, h3, p{
+        padding: 0px 10px 0px 10px;
+    }
+    .noticias{
+        width: 50%;
+        height: 50%;
+    }
+    @media (max-width: 986px){
+        .conteiner{
+            display: block;
+        }
+        div{
+            width: 100%;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+    }
+</style>
+</html>
