@@ -1,5 +1,5 @@
 #typewriter{
-  color: rgb(99 115 129 / var(--tw-text-opacity));
+  color: rgb(48 86 211)
 }
 #typewriter:after{
   content: "|";
