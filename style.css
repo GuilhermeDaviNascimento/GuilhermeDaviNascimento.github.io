@@ -20,3 +20,9 @@
 html {
   scroll-behavior: smooth;
 }
+.page1{
+  display: block; 
+}
+.page2{
+  display: none;
+}
