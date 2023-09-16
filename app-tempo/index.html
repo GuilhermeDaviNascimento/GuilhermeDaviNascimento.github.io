@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <div class="conteudo">
+                <div class="fixinput">
+                    <input id="inputcidade" type="text" class="cidade" placeholder="Cidade:" onchange="main ()">
+                    <div class="temperatura-clima">
+                        <div id="temperaturaconteiner"></div>
+                        <div class="rotate" id="descricaotempoconteiner"></div>
+                    </div>
+                </div>
+                <img id="svg" src="" alt="">                       
+        </div>
+        <div class="baixo">
+            <div class="conteiner-bottom">
+                <div class="circulo">
+                    <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.03125 7.00781V7.01953C3.07031 7.01953 2.27344 6.69141 1.62891 6.03516C0.984375 5.37891 0.667969 4.58203 0.667969 3.63281C0.667969 2.70703 0.984375 1.91016 1.62891 1.25391C2.27344 0.597656 3.07031 0.269531 4.03125 0.269531C4.99219 0.269531 5.78906 0.597656 6.43359 1.25391C7.07812 1.91016 7.39453 2.69531 7.39453 3.62109C7.39453 4.57031 7.07812 5.36719 6.43359 6.02344C5.78906 6.67969 4.99219 7.00781 4.03125 7.00781ZM4.03125 4.91016C4.38281 4.91016 4.67578 4.79297 4.92188 4.54688C5.16797 4.30078 5.28516 3.99609 5.28516 3.63281C5.28516 3.28125 5.16797 2.98828 4.92188 2.75391C4.67578 2.51953 4.38281 2.40234 4.03125 2.40234C3.67969 2.40234 3.38672 2.51953 3.15234 2.75391C2.91797 2.98828 2.80078 3.28125 2.80078 3.63281C2.80078 3.99609 2.91797 4.30078 3.15234 4.54688C3.38672 4.79297 3.67969 4.91016 4.03125 4.91016ZM26.707 16.2422L26.7422 16.2773C26.1211 17.8008 25.0898 19.0312 23.6484 19.957C22.207 20.8828 20.4609 21.3516 18.4102 21.3516C15.7031 21.3516 13.4648 20.4844 11.6836 18.7617C9.90234 17.0391 9.01172 14.8594 9.01172 12.2344C9.01172 9.64453 9.90234 7.48828 11.6836 5.76562C13.4648 4.04297 15.7031 3.17578 18.3867 3.17578C20.4375 3.17578 22.1719 3.64453 23.6016 4.58203C25.0312 5.51953 26.0625 6.73828 26.6836 8.23828L23.1797 9.65625C22.7344 8.78906 22.1016 8.07422 21.2812 7.52344C20.4609 6.97266 19.5 6.69141 18.3984 6.69141C16.8281 6.69141 15.5156 7.21875 14.4492 8.27344C13.3828 9.32812 12.8555 10.6406 12.8555 12.2227C12.8555 13.793 13.3945 15.1172 14.4609 16.1953C15.5273 17.2734 16.8398 17.8125 18.3984 17.8125C19.5469 17.8125 20.543 17.5312 21.3867 16.957C22.2305 16.3828 22.8281 15.668 23.1797 14.8125L26.707 16.2422Z" fill="#252525"/>
+                    </svg>                        
+                </div>
+                <p class="text-bottom">Sensação<br> <label class="dados" id="fellslike"></label></p>
+            </div>
+            <div class="conteiner-bottom">
+                <div class="circulo">
+                    <svg width="42" height="26" viewBox="0 0 42 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.20348 6.71161H21.296" stroke="#252525" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M26.2831 6.87642C26.2831 4.18326 28.4663 2.00002 31.1595 2.00002C33.8526 2.00002 36.0358 4.18326 36.0358 6.87642C36.0358 9.56957 33.8526 11.7528 31.1595 11.7528H14.634" stroke="#252525" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M36.5895 24.0001C38.7316 24.0001 40.4684 22.2635 40.4684 20.1211C40.4684 17.9792 38.7316 16.2426 36.5895 16.2426H2" stroke="#252525" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                              
+                </div>
+                <p class="text-bottom">Vento<br> <label class="dados" id="wind"></label></p>
+            </div>
+            <div class="conteiner-bottom">
+                <div class="circulo">
+                    <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5 14.7736C16.5 14.7736 3.0544 14.7736 2.52719 14.7736C2.52719 14.7736 4.63636 2.54712 16.2364 2.01553C27.8364 1.48395 31 14.7736 31 14.7736H16.5ZM16.5 14.7736V25.9368C16.5 25.9368 16.4182 29 18 29C19.5818 29 18.5 29 20.5 29C22.5 29 22.5 25 20.5 25" stroke="#252525" stroke-width="3"/>
+                    </svg>                                              
+                </div>
+                <p class="text-bottom">Nuvens<br><label class="dados" id="precition"></label></p>
+            </div>
+            <div class="conteiner-bottom">
+                <div class="circulo">
+                    <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.0067 17.5607C21.0067 22.8096 16.7523 27.064 11.5022 27.064C6.25438 27.064 2 22.8096 2 17.5607C2 12.3105 11.5022 2 11.5022 2C11.5022 2 21.0067 12.3105 21.0067 17.5607Z" stroke="#252525" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                           
+                </div>
+                <p class="text-bottom">Umidade<br><label class="dados" id="humidity"></label></p>
+            </div>
+        </div>
+        <svg class="svgbaixo" width="600" height="330" viewBox="0 0 600 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0C0 0 110 39 300 35.5C490 32 600 0 600 0V270C600 303.137 573.137 330 540 330H60C26.8629 330 0 303.137 0 270C0 164.558 0 105.442 0 0Z" fill="white"/>
+        </svg>                
+    </div>
+</body>
+</html>
