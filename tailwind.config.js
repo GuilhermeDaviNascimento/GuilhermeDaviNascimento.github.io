@@ -1,6 +1,10 @@
 module.exports = {
   content: ["./*.html", "./assets/**/*.js"],
-  theme: {},
+  theme: {
+    colors: {
+      'primary': '#7c3aed'
+    }
+  },
   variants: {
     extend: {},
   },

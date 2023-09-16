@@ -1,5 +1,8 @@
 #typewriter{
-  color: rgb(48 86 211)
+  color: rgb(126 33 212)
+}
+body{
+  background-color: rgb(28 33 40);
 }
 #typewriter:after{
   content: "|";
@@ -26,3 +29,18 @@ html {
 .page2{
   display: none;
 }
+.fotinha {
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite
+    }
+    @keyframes float {
+    0%{
+        transform: translateY(0px)
+    }
+        50%{
+        transform: translateY(-10px)
+    }
+        100%{
+        transform: translateY(0px)
+    }
+  }

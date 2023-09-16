@@ -1721,7 +1721,7 @@ input[type="radio"]:checked ~ .box span{
 
 .border-primary{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
 }
 
 .border-secondary{
@@ -1816,7 +1816,7 @@ input[type="radio"]:checked ~ .box span{
 
 .border-dark{
   --tw-border-opacity: 1;
-  border-color: rgb(9 14 52 / var(--tw-border-opacity));
+  border-color: rgb(33 0 75 / var(--tw-border-opacity));
 }
 
 .border-\[\#E8E8E8\]{
@@ -1835,7 +1835,7 @@ input[type="radio"]:checked ~ .box span{
 
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -1898,9 +1898,13 @@ input[type="radio"]:checked ~ .box span{
   background-color: rgb(247 248 250 / var(--tw-bg-opacity));
 }
 
+.bg-lightdark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 51 59 / var(--tw-bg-opacity));
+}
 .bg-dark{
   --tw-bg-opacity: 1;
-  background-color: rgb(9 14 52 / var(--tw-bg-opacity));
+  background-color: rgb(28 33 40 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F3F4F6\]{
@@ -2371,12 +2375,12 @@ input[type="radio"]:checked ~ .box span{
 
 .text-primary{
   --tw-text-opacity: 1;
-  color: rgb(48 86 211 / var(--tw-text-opacity));
+  color: rgb(126 33 212 / var(--tw-text-opacity));
 }
 
 .text-dark{
   --tw-text-opacity: 1;
-  color: rgb(9 14 52 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-body-color{
@@ -2561,7 +2565,7 @@ input[type="radio"]:checked ~ .box span{
 
 .ring-primary{
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(48 86 211 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(126 33 212 / var(--tw-ring-opacity));
 }
 
 .filter{
@@ -2628,7 +2632,7 @@ input:checked ~ .dot{
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 input:checked ~ .dot .active{
@@ -2641,7 +2645,7 @@ input:checked ~ .dot .inactive{
 
 input#toggleFour:checked ~ .box{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 input#toggleFour:checked ~ .dot{
@@ -2660,7 +2664,7 @@ input#toggleFive:checked ~ .dot{
 
 input#toggleFive:checked ~ .dot > span{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 input#toggleSix:checked ~ .dot{
@@ -2677,14 +2681,14 @@ input#toggleEight:checked ~ .box{
 
 input#toggleEight:checked ~ .dot{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 input#toggleEight:checked ~ .dot span{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 input#toggleNine:checked ~ .dot span{
@@ -2694,22 +2698,22 @@ input#toggleNine:checked ~ .dot span{
 
 input#toggleNine:checked ~ .dot{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 input:checked ~ .box{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
 }
 
 input#checkboxLabelOne:checked ~ .box{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
 }
 
 input#checkboxLabelOne:checked ~ .box .dot{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 input#checkboxLabelTwo:checked ~ .box span{
@@ -2722,17 +2726,17 @@ input#checkboxLabelThree:checked ~ .box span{
 
 input#checkboxLabelFour:checked ~ .box{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
 }
 
 input#checkboxLabelFour:checked ~ .box span{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 input#checkboxLabelFive:checked ~ .box{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .shape-gradient {
@@ -2758,7 +2762,7 @@ input[type="checkbox"]:checked ~ .box span{
 
 input[type="radio"]:checked ~ .box .circle{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 input[type="radio"]:checked ~ .box span{
@@ -2767,20 +2771,20 @@ input[type="radio"]:checked ~ .box span{
 
 .payment:checked ~ label{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
   --tw-bg-opacity: 8%;
 }
 
 .shipping:checked ~ label{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
 }
 
 .shipping:checked ~ label .title{
   --tw-text-opacity: 1;
-  color: rgb(48 86 211 / var(--tw-text-opacity));
+  color: rgb(126 33 212 / var(--tw-text-opacity));
 }
 
 .color:checked ~ label span{
@@ -2800,32 +2804,32 @@ input[type="radio"]:checked ~ .box span{
 
 .filter-size:checked ~ label{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .filter-size-2:checked ~ label{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.1;
 }
 
 .ram-size:checked ~ label{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(48 86 211 / var(--tw-text-opacity));
+  color: rgb(126 33 212 / var(--tw-text-opacity));
 }
 
 .download-radio:checked ~ label{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .download-radio:checked ~ label span{
@@ -2861,7 +2865,7 @@ input[type="radio"]:checked ~ .box span{
   height: 6px;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .priceSlideOne .noUi-horizontal .noUi-handle{
@@ -2871,7 +2875,7 @@ input[type="radio"]:checked ~ .box span{
   border-radius: 9999px;
   border-width: 6px;
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
@@ -2897,7 +2901,7 @@ input[type="radio"]:checked ~ .box span{
   height: 0.25rem;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .priceSlideTwo .noUi-horizontal .noUi-handle{
@@ -2907,7 +2911,7 @@ input[type="radio"]:checked ~ .box span{
   border-radius: 9999px;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
@@ -2924,7 +2928,7 @@ input[type="radio"]:checked ~ .box span{
 
 .autoSaverSwitch input:checked ~ .slider{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .autoSaverSwitch input:checked ~ .slider .dot{
@@ -2950,7 +2954,7 @@ input[type="radio"]:checked ~ .box span{
   --tw-bg-opacity: 1;
   background-color: rgb(244 247 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(48 86 211 / var(--tw-text-opacity));
+  color: rgb(126 33 212 / var(--tw-text-opacity));
 }
 
 .themeSwitcherTwo input:checked ~ .slider{
@@ -2972,7 +2976,7 @@ input[type="radio"]:checked ~ .box span{
 
 .themeSwitcherThree input:checked ~ div .dark{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -2981,9 +2985,9 @@ input[type="radio"]:checked ~ .box span{
 
 .checkbox-list:checked ~ label{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .checkbox-list:checked ~ label .icon{
@@ -2992,9 +2996,9 @@ input[type="radio"]:checked ~ .box span{
 
 .box-select-1:checked ~ label .box{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .box-select-1:checked ~ label .box .icon{
@@ -3008,21 +3012,21 @@ input[type="radio"]:checked ~ .box span{
 
 .select-list:checked ~ label{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(48 86 211 / var(--tw-text-opacity));
+  color: rgb(126 33 212 / var(--tw-text-opacity));
 }
 
 .select-list:checked ~ label .icon{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .tableCheckbox:checked ~ label .icon-box{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .tableCheckbox:checked ~ label .icon{
@@ -3031,9 +3035,9 @@ input[type="radio"]:checked ~ .box span{
 
 .tableCheckbox-2:checked ~ label{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .tableCheckbox-2:checked ~ label .icon{
@@ -3067,9 +3071,9 @@ input[type="radio"]:checked ~ .box span{
 
 .jvm-zoom-btn:hover{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -3213,7 +3217,7 @@ input[type="radio"]:checked ~ .box span{
 
 .hover\:border-primary:hover{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
 }
 
 .hover\:border-secondary:hover{
@@ -3238,7 +3242,7 @@ input[type="radio"]:checked ~ .box span{
 
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-secondary:hover{
@@ -3274,7 +3278,7 @@ input[type="radio"]:checked ~ .box span{
 
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
-  color: rgb(48 86 211 / var(--tw-text-opacity));
+  color: rgb(126 33 212 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover{
@@ -3304,12 +3308,12 @@ input[type="radio"]:checked ~ .box span{
 
 .file\:hover\:bg-primary:hover::-webkit-file-upload-button{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .file\:hover\:bg-primary:hover::file-selector-button{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(126 33 212 / var(--tw-bg-opacity));
 }
 
 .file\:hover\:bg-opacity-10:hover::-webkit-file-upload-button{
@@ -3322,7 +3326,7 @@ input[type="radio"]:checked ~ .box span{
 
 .focus\:border-primary:focus{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
 }
 
 .focus\:ring-2:focus{
@@ -3339,7 +3343,7 @@ input[type="radio"]:checked ~ .box span{
 
 .active\:border-primary:active{
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(126 33 212 / var(--tw-border-opacity));
 }
 
 .disabled\:cursor-default:disabled{
