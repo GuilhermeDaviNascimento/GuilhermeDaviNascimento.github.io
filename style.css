@@ -44,3 +44,19 @@ html {
         transform: translateY(0px)
     }
   }
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(45 51 59);
+  border-radius: 20px;
+}
