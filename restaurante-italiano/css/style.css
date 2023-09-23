@@ -1,0 +1,193 @@
+/* #0EA47A */
+.mx-6 {
+  padding: 0 10%;
+}
+
+.prato-selecionado{
+  padding-right: 25px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+
+}
+main,
+.item-selecionado-cardapio {
+  margin-top: 140px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-selecionado-cardapio{
+  display: flex;
+  justify-content: left;
+}
+.conteiner-cardapio2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.logo {
+  width: 250px;
+}
+
+.texto-principal {
+  width: 30%;
+}
+
+.macaraoPrincipal {
+  width: 700px;
+  margin: 0;
+}
+
+.navbar-brand {
+  width: 15%;
+}
+
+.cardapio {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.conteiner-cardapio {
+  margin-top: 100px;
+}
+
+.item-cardapio {
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  padding: 0px 25px;
+}
+
+.comidascardapio {
+  width: 50px;
+  padding-right: 10px;
+}
+
+.textoCardapio {
+  margin-bottom: 50px;
+}
+
+
+.prato-selecionado {
+  width: 35%;
+}
+
+.container-mais-avaliados {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.preco-estrela {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gatinho-chef {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.folha {
+  z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.grande {
+  border: solid 150px #198754;
+  right: -15%;
+  top: -30%;
+  width: 650px;
+  height: 650px;
+}
+
+.grande2 {
+  border: solid 150px #198754;
+  left: -15%;
+  top: 110%;
+  width: 750px;
+  height: 750px;
+}
+.macaraoPrincipal {
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite
+    }
+    @keyframes float {
+    0%{
+        transform: translateY(0px)
+    }
+        50%{
+        transform: translateY(-10px)
+    }
+        100%{
+        transform: translateY(0px)
+    }
+  }
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #198754;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #198754;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+
+  .texto-baixo {
+    margin-right: 175px;
+  }
+}
+
+@media (max-width: 425px) {
+  .texto-principal {
+    width: 100%;
+  }
+  main, .item-selecionado-cardapio{
+    flex-direction: column;
+  }
+  .macaraoPrincipal {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .grande {
+    visibility: hidden;
+  }
+
+  .item-cardapio{
+    margin-bottom: 10px;
+  }
+
+  .container-mais-avaliados{
+    flex-direction: column;
+  }
+
+  .texto-baixo {
+    margin-right: 0px;
+  }
+
+  .conteiner-cardapio2{
+    align-items: center;
+  }
+  
+  .prato-selecionado{
+    width: 100%;
+  }
+}

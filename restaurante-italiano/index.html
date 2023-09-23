@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamma Mia Cucina</title>
+    <link rel="icon" href="src/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+</head>
+
+
+<header class="mx-6">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img class="navbar-brand logo" src="src/logo.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#melhores">Melhores Pratos</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#cardapio">Cardápio</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#chefes">Nossa Equipe</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" id="theme-toggle-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                          </svg>/<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                          </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- ----------------------------------- FIM DE UMA SECTION -----------------------------------  -->
+<main class="mx-6" id="home">
+    <div class="folha grande"></div>
+    <div class="texto-principal ">
+        <h2>Sinta-se em <strong class="text-success">casa</strong> e saboreie a autêntica paixão da <strong
+                class="text-success">Itália</strong> em cada prato!</h2>
+        <p>Quando estiver pronto para uma experiência verdadeiramente italiana, basta apertar o botão de pedido e
+            deixar-nos encantar os seus sentidos. Buon appetito!</p>
+        <button type="button" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg> Peça agora!</button>
+    </div>
+    <img src="src/pasta.png" alt="" class="macaraoPrincipal" id="macarao">
+</main>
+<!-- ----------------------------------- FIM DE UMA SECTION -----------------------------------  -->
+<div class="mx-6 conteiner-cardapio" id="cardapio">
+    <h4>Cardápio</h4>
+    <p class="textoCardapio">Clássico cardápio italiano com pratos como pizza, pasta fresca, risotos e antipastos,
+        oferecendo uma explosão de sabores autênticos da Itália.</p>
+    <div class="cardapio">
+        <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapsePizza" aria-expanded="false"
+            aria-controls="collapseExample"><img src="src/pizza-de-frutos-do-mar.png" alt=""
+                class="comidascardapio">Pizza</button>
+        <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseCarbonara" aria-expanded="false"
+            aria-controls="collapseExample"><img src="src/carbonara.png" alt=""
+                class="comidascardapio">Carbonara</button>
+        <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseLasagna" aria-expanded="false"
+            aria-controls="collapseExample"><img src="src/lasanha.png" alt="" class="comidascardapio">Lasagna</button>
+        <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapsePasta" aria-expanded="false"
+            aria-controls="collapseExample"><img src="src/focaccia.png" alt="" class="comidascardapio">Focaccia</button>
+    </div>
+</div>
+<div class="mx-6 conteiner-cardapio2">
+    <section class="item-selecionado-cardapio collapse show" id="collapsePizza">
+        <img src="src/pizza-de-frutos-do-mar.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Pizza Mare e Monti:</strong> A Sinfonia Perfeita dos Sabores da Terra e
+                do Mar!</h2>
+            <p>Nossa Pizza Mare e Monti é uma verdadeira obra-prima culinária que equilibra de maneira harmoniosa os
+                melhores ingredientes da
+                terra e do mar. Cada mordida é uma experiência de sabor única que leva você a uma jornada sensorial.
+            </p>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseCarbonara">
+        <img src="src/carbonara.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Spaghetti à Carbonara:</strong> A Dança Cremosa dos Espaguetes,
+                Pancetta e Queijo Pecorino!</h2>
+            <p>Esta é uma famosa receita de massa italiana originária de Roma. Os espaguetes são cozidos al dente e
+                depois misturados com um molho especial feito de ovos batidos, queijo Pecorino
+                Romano, pancetta (um tipo de bacon italiano) e pimenta preta moída. A combinação resulta em um prato
+                de massa incrivelmente cremoso e saboroso.</p>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseLasagna">
+        <img src="src/lasanha.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Lasagna:</strong> Camadas Douradas de Sabor com Tomate, Ricota e Molho
+                Bechamel!</h2>
+            <p>A lasanha é uma camada de massa intercalada com molho de carne à base de tomate, queijo ricota,
+                queijo mozarela e queijo parmesão,
+                além de um molho bechamel. Cada camada é cozida no forno até que o queijo derreta e a lasanha fique
+                dourada e deliciosa.</p>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapsePasta">
+        <img src="src/focaccia.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Focaccia:</strong> O Abraço Perfumado de Azeite e Alecrim.</h2>
+            <p>A focaccia é um pão achatado de origem italiana que é conhecido por sua textura macia e sabor rico. A
+                massa é geralmente feita com farinha de trigo, água, fermento, sal e azeite de oliva. O que torna a
+                focaccia tão especial é a maneira como ela é preparada e temperada. Após o processo de
+                fermentação da massa, ela é estendida em uma assadeira e, em seguida, é tradicionalmente perfurada
+                com os dedos para criar pequenos buracos na superfície.</p>
+        </div>
+    </section>
+</div>
+<!-- ----------------------------------- FIM DE UMA SECTION -----------------------------------  -->
+<div class="mx-6 mais-avaliados" id="melhores">
+    <h3 class="text-center mt-5 mb-5">Nossos Pratos Mais Bem Avaliados</h3>
+    <div class="container-mais-avaliados">
+        <div class="card border-success" style="width: 18rem;">
+            <img src="https://conteudo.imguol.com.br/c/entretenimento/be/2022/05/09/carbonara---ronald-1652100428622_v2_1x1.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-success">Spaghetti à Carbonara</h5>
+                <p class="card-text">A Dança Cremosa dos Espaguetes, Pancetta e Queijo Pecorino!</p>
+                <div class="preco-estrela">
+                    <h5>12R$</h5>
+                    <div class="preco-estrela">
+                        <p style="padding-right: 7px;">9.8/10</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                            class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-success" style="width: 18rem;">
+            <img src="https://www.pizzartfano.com/utenti/pizzartfano_com/uploads/img_9700.jpg" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-success">Pizza Mare e Monti</h5>
+                <p class="card-text">A Sinfonia Perfeita dos Sabores da Terra e do Mar!</p>
+                <div class="preco-estrela">
+                    <h5>20R$</h5>
+                    <div class="preco-estrela">
+                        <p style="padding-right: 7px;">9.7/10</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                            class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-success" style="width: 18rem;">
+            <img src="https://www.tastesoflizzyt.com/wp-content/uploads/2022/12/homemade-lasagna-recipe_-8.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-success">Lasagna</h5>
+                <p class="card-text">Camadas Douradas de Sabor com Tomate, Ricota e Molho Bechamel!</p>
+                <div class="preco-estrela">
+                    <h5>17R$</h5>
+                    <div class="preco-estrela">
+                        <p style="padding-right: 7px;">9.6/10</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                            class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------------------- FIM DE UMA SECTION -----------------------------------  -->
+<div class="mx-6 mais-avaliados" id="chefes">
+    <h3 class="text-center mt-5 mb-5">Nossa Equipe de Chefes</h3>
+    <div class="container-mais-avaliados">
+        <div class="card border-success" style="width: 18rem; height: 20rem;">
+            <div class="card-body">
+                <h5 class="card-title text-success">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="" class="gatinho-chef">
+                    Chef Giancarlo
+                </h5>
+                <p class="card-text">Paixão pela autenticidade e tradição, especializado em pratos clássicos da
+                    Toscana.</p>
+            </div>
+        </div>
+        <div class="card border-success" style="width: 18rem; height: 20rem;">
+            <div class="card-body">
+                <h5 class="card-title text-success">
+                    <img src="https://pbs.twimg.com/media/EcrlV2fWsAERPYn.png" alt="" class="gatinho-chef">
+                    Chef Isabella
+                </h5>
+                <p class="card-text">Inovadora da culinária italiana, famosa por reinventar pratos tradicionais com
+                    toques contemporâneos.</p>
+            </div>
+        </div>
+        <div class="card border-success" style="width: 18rem; height: 20rem;">
+            <div class="card-body">
+                <h5 class="card-title text-success">
+                    <img src="https://media.istockphoto.com/id/831901926/pt/foto/cat-cook-with-bread.jpg?s=1024x1024&w=is&k=20&c=igNQraIimAkU8yAb-iizBwt2yJBOYmQdZWIuNn6Qfx8="
+                        alt="" class="gatinho-chef">
+                    Chef Marco
+                </h5>
+                <p class="card-text">Mestre da culinária do norte da Itália, conhecido por pratos sofisticados e
+                    foco em ingredientes sazonais.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------------------- FIM DE UMA SECTION -----------------------------------  -->
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 Mamma Mia Cucina, Inc</p>
+        <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap" />
+            </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#cardapio" class="nav-link px-2 text-body-secondary">Cardápio</a></li>
+            <li class="nav-item"><a href="#chefes" class="nav-link px-2 text-body-secondary">Chefes</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary">Sobre</a></li>
+        </ul>
+    </footer>
+</div>
+<script src="js/bootstrap.min.js"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        $(".item-cardapio").click(function () {
+            // Fecha todos os collapses
+            $(".item-selecionado-cardapio").collapse('hide');
+        });
+    });
+    // Função para alternar a classe no elemento <body>
+        // Função para alternar o atributo data-bs-theme
+        function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-bs-theme', newTheme);
+        }
+
+        // Event listener para o botão
+        const themeToggleButton = document.getElementById('theme-toggle-button');
+        themeToggleButton.addEventListener('click', toggleTheme);
+        
+</script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+
+</html>
