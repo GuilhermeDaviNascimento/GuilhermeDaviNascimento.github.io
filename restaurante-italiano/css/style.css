@@ -1,16 +1,30 @@
 /* #0EA47A */
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  color: #198754;
+  background-color: #198754;
+}
 .mx-6 {
   padding: 0 10%;
 }
-
+.historia{
+  display: flex;
+  align-items: start;
+}
 .prato-selecionado{
   padding-right: 25px;
 }
-
+.ofertaDoDia{
+  text-decoration: line-through;
+  color: grey;
+}
 body {
   margin: 0;
   overflow-x: hidden;
 
+}
+.conteinerPromo{
+  display: flex;
+  gap: 10px;
 }
 main,
 .item-selecionado-cardapio {
@@ -46,7 +60,9 @@ main,
 .navbar-brand {
   width: 15%;
 }
-
+.lista-cardapio-pedidos{
+  width: 33.3%;
+}
 .cardapio {
   display: flex;
   justify-content: space-between;

@@ -6,14 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mamma Mia Cucina</title>
     <link rel="icon" href="src/logo.png">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 </head>
 
+<!-- 1. Página Inicial: TUDO OK
+Introdução: Uma mensagem de boas-vindas e uma breve visão geral do ambiente ou tema do restaurante. OK
+Imagens de Alta Qualidade: Destaque imagens do interior, exterior e pratos exclusivos do restaurante. OK
+Liste os horários de funcionamento do restaurante para cada dia da semana. OK
+
+2. Cardápio: OKK
+Categorias do Menu: Exiba um menu categorizado com seções para entradas, pratos principais, sobremesas e bebidas. OK
+Detalhes dos Itens: Inclua descrições detalhadas, preços e imagens de alta qualidade de cada item do menu.  OK
+Especiais: Destaque especiais diários ou sazonais. OK
+
+3. Sobre Nós: TUDO OK
+História do Restaurante: Compartilhe a história, valores e missão do restaurante. OK
+Perfil do Chef: Apresente o chef ou equipe de culinária com sua formação e conquistas. OK
+Prêmios e Reconhecimentos: Exiba quaisquer prêmios ou reconhecimentos recebidos pelo restaurante. OK
+
+4. Reservas/Reservas: TUDO CERTO
+Formulário de Reserva: Permita que os clientes façam reservas online, fornecendo data, horário, tamanho do grupo e detalhes de contato. OK
+Política de Reservas: Inclua informações sobre políticas de cancelamento e confirmação de reservas. OK
+
+5. Galeria: 
+Galeria de Fotos: Apresente uma galeria de imagens em alta resolução de pratos, eventos e do interior do restaurante. OK
+Avaliações de Clientes: Compartilhe avaliações positivas e depoimentos de clientes. OK
+
+6. Fale Conosco: TUDO OK
+Informações de Contato: Forneça o endereço do restaurante, número de telefone, e-mail e um mapa para obter direções. OK
+Formulário de Contato: Permita que os visitantes enviem perguntas ou feedback por meio de um formulário de contato. OK
+
+7. Pedidos Online/Entrega: FALTA FAZER
+Pedidos Online: Ofereça pedidos online para retirada ou entrega.
+Áreas de Entrega: Especifique as áreas onde a entrega está disponível e forneça os horários estimados de entrega.
+
+8. Links para Redes Sociais: TUDO OK
+Links para os perfis de redes sociais do restaurante, incluindo Facebook, Instagram, Twitter e outros. OK
+
+9. Promoções Especiais: OK
+Destaque promoções em andamento, descontos ou programas de fidelidade. FALTA FAAZER
+
+10. Avaliações Online: FALTA FAZERRR
+- Exiba links para plataformas de avaliações online, como Yelp ou TripAdvisor.
+ -->
 
 <header class="mx-6">
     <nav class="navbar navbar-expand-lg">
@@ -35,11 +75,24 @@
                         <a class="nav-link" href="#chefes">Nossa Equipe</a>
                     </li>
                     <li class="nav-item mx-4">
-                        <a class="nav-link" id="theme-toggle-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
-                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                          </svg>/<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
-                            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                          </svg></a>
+                        <a class="nav-link" href="#historia">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#faleconosco">Fale Conosco</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#funcionamento">Faça sua Reserva</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" id="theme-toggle-button" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                            </svg>/<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg></a>
                     </li>
                 </ul>
             </div>
@@ -55,34 +108,245 @@
                 class="text-success">Itália</strong> em cada prato!</h2>
         <p>Quando estiver pronto para uma experiência verdadeiramente italiana, basta apertar o botão de pedido e
             deixar-nos encantar os seus sentidos. Buon appetito!</p>
-        <button type="button" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                viewBox="0 0 16 16">
                 <path
                     d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-            </svg> Peça agora!</button>
+            </svg> Peça agora!
+        </button>
+        <a type="button" class="btn btn-success" href="#funcionamento">Nossos Horários</a>
     </div>
     <img src="src/pasta.png" alt="" class="macaraoPrincipal" id="macarao">
 </main>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Pedido</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="d-flex flex-row lista-cardapio-pedidos">
+                        <div class="col-12">
+                            <div class="d-flex flex-column lista-cardapio-pedidos">
+                                <label for="inputAddress" class="form-label">Pizza</label>
+                                <label for="inputAddress" class="form-label">Carbonara</label>
+                                <label for="inputAddress" class="form-label">Lasagna</label>
+                                <label for="inputAddress" class="form-label">Focaccia</label>
+                                <label for="inputAddress" class="form-label">Ravioli</label>
+                                <label for="inputAddress" class="form-label">Polenta</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex flex-column lista-cardapio-pedidos">
+                                <label for="inputAddress" class="form-label">Pizza</label>
+                                <label for="inputAddress" class="form-label">Carbonara</label>
+                                <label for="inputAddress" class="form-label">Lasagna</label>
+                                <label for="inputAddress" class="form-label">Focaccia</label>
+                                <label for="inputAddress" class="form-label">Ravioli</label>
+                                <label for="inputAddress" class="form-label">Polenta</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex flex-column lista-cardapio-pedidos">
+                                <label for="inputAddress" class="form-label">Pizza</label>
+                                <label for="inputAddress" class="form-label">Carbonara</label>
+                                <label for="inputAddress" class="form-label">Lasagna</label>
+                                <label for="inputAddress" class="form-label">Focaccia</label>
+                                <label for="inputAddress" class="form-label">Ravioli</label>
+                                <label for="inputAddress" class="form-label">Polenta</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Pedido</label>
+                        <input type="text" class="form-control" id="inputAddress2">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Bairro</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Escolha</option>
+                            <option>Poço</option>
+                            <option>Jaraguá</option>
+                            <option>Ponta da Terra</option>
+                            <option>Pajuçara</option>
+                            <option>Ponta Verde</option>
+                            <option>Jatiúca</option>
+                            <option>Mangabeiras</option>
+                            <option>Centro</option>
+                            <option>Pontal da Barra</option>
+                            <option>Trapiche da Barra</option>
+                            <option>Prado</option>
+                            <option>Ponta Grossa</option>
+                            <option>Levada</option>
+                            <option>Vergel do Lago</option>
+                            <option>Farol</option>
+                            <option>Pintanguinha</option>
+                            <option>Pintanguinha</option>
+                            <option>Gruta de Lourdes</option>
+                            <option>Canaã</option>
+                            <option>Santo Amaro</option>
+                            <option>Jardim Petrópolis</option>
+                            <option>Ouro Preto</option>
+                            <option>Bebedouro</option>
+                            <option>C. de Bebedouro</option>
+                            <option>C. de Jaqueira</option>
+                            <option>Bom Parto</option>
+                            <option>Bom Parto</option>
+                            <option>Sta. Amélia</option>
+                            <option>Fernão Velho</option>
+                            <option>Rio novo</option>
+                            <option>Mutange</option>
+                            <option>Jacintinho</option>
+                            <option>Feitosa</option>
+                            <option>Barro Duro</option>
+                            <option>Serraria</option>
+                            <option>São Jorge</option>
+                            <option>Benedito Bentes</option>
+                            <option>Antares</option>
+                            <option>Santos Dumont</option>
+                            <option>Clima Bom</option>
+                            <option>Cidade Universitária</option>
+                            <option>Santa Lúcia</option>
+                            <option>Tabuleiro dos Martins</option>
+                            <option>Jacarecica</option>
+                            <option>Garça Torta</option>
+                            <option>Cruz das Almas</option>
+                            <option>Riacho Doce</option>
+                            <option>Pescaria</option>
+                            <option>Ipioca</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">CEP</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-success">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- ----------------------------------- FIM DE UMA SECTION -----------------------------------  -->
-<div class="mx-6 conteiner-cardapio" id="cardapio">
+<div class="conteiner-cardapio mx-6" id="cardapio">
     <h4>Cardápio</h4>
     <p class="textoCardapio">Clássico cardápio italiano com pratos como pizza, pasta fresca, risotos e antipastos,
         oferecendo uma explosão de sabores autênticos da Itália.</p>
-    <div class="cardapio">
-        <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
-            data-bs-toggle="collapse" data-bs-target="#collapsePizza" aria-expanded="false"
-            aria-controls="collapseExample"><img src="src/pizza-de-frutos-do-mar.png" alt=""
-                class="comidascardapio">Pizza</button>
-        <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
-            data-bs-toggle="collapse" data-bs-target="#collapseCarbonara" aria-expanded="false"
-            aria-controls="collapseExample"><img src="src/carbonara.png" alt=""
-                class="comidascardapio">Carbonara</button>
-        <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
-            data-bs-toggle="collapse" data-bs-target="#collapseLasagna" aria-expanded="false"
-            aria-controls="collapseExample"><img src="src/lasanha.png" alt="" class="comidascardapio">Lasagna</button>
-        <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
-            data-bs-toggle="collapse" data-bs-target="#collapsePasta" aria-expanded="false"
-            aria-controls="collapseExample"><img src="src/focaccia.png" alt="" class="comidascardapio">Focaccia</button>
+</div>
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active mx-6">
+            <div class="cardapio">
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsePizza" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/pizza-de-frutos-do-mar.png" alt=""
+                        class="comidascardapio">Pizza</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseCarbonara" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/carbonara.png" alt=""
+                        class="comidascardapio">Carbonara</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseLasagna" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/lasanha.png" alt=""
+                        class="comidascardapio">Lasagna</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsePasta" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/focaccia.png" alt=""
+                        class="comidascardapio">Focaccia</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseRavioli" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/ravioli.png" alt=""
+                        class="comidascardapio">Ravioli</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsePolenta" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/polenta.png" alt=""
+                        class="comidascardapio">Polenta</button>
+            </div>
+        </div>
+        <div class="carousel-item mx-6 ">
+            <div class="cardapio">
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseNegroni" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/negroni.png" alt=""
+                        class="comidascardapio">Negroni</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseBellini" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/bellini.png" alt=""
+                        class="comidascardapio">Bellini</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseManhattan" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/Manhattan.png" alt="" width="auto"
+                        class="comidascardapio">Manhattan</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseMartini" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/Martini.png" alt="" width="auto"
+                        class="comidascardapio">Martini</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseDaiquiri" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/Daiquiri.png" alt=""
+                        class="comidascardapio">Daiquiri</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseMijito" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/Mojito.png" alt=""
+                        class="comidascardapio">Mojito</button>
+            </div>
+        </div>
+        <div class="carousel-item mx-6 ">
+            <div class="cardapio">
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTiramisu" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/tiramisu.png" alt=""
+                        class="comidascardapio">Tiramisu</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseCannoli" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/Cannoli.png" alt=""
+                        class="comidascardapio">Cannoli</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseCrostata" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/Crostata.png" alt=""
+                        class="comidascardapio">Crostata</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseZabaione" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/Zabaione.png" alt=""
+                        class="comidascardapio">Zabaione</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseSfogliatella" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/Sfogliatella.png" alt=""
+                        class="comidascardapio">Sfogliatella</button>
+                <button type="button" class="btn btn-outline-success item-cardapio btn-lg" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseAmaretti" aria-expanded="false"
+                    aria-controls="collapseExample"><img src="src/Amaretti.png" alt=""
+                        class="comidascardapio">Amaretti</button>
+            </div>
+        </div>
+        <button class="carousel-control-prev btn-success" type="button" data-bs-target="#carouselExample"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-success">Previous</span>
+        </button>
+        <button class="carousel-control-next btn-success" type="button" data-bs-target="#carouselExample"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden text-success">Next</span>
+        </button>
     </div>
 </div>
 <div class="mx-6 conteiner-cardapio2">
@@ -95,6 +359,11 @@
                 melhores ingredientes da
                 terra e do mar. Cada mordida é uma experiência de sabor única que leva você a uma jornada sensorial.
             </p>
+            <div class="conteinerPromo">
+                <h3 class="ofertaDoDia">20,99R$</h3>
+                <h3>Por</h3>
+                <h3 class="text-success">14,99R$</h3>
+            </div>
         </div>
     </section>
     <section class="item-selecionado-cardapio collapse" id="collapseCarbonara">
@@ -106,6 +375,7 @@
                 depois misturados com um molho especial feito de ovos batidos, queijo Pecorino
                 Romano, pancetta (um tipo de bacon italiano) e pimenta preta moída. A combinação resulta em um prato
                 de massa incrivelmente cremoso e saboroso.</p>
+            <h3>12,99R$</h3>
         </div>
     </section>
     <section class="item-selecionado-cardapio collapse" id="collapseLasagna">
@@ -117,6 +387,7 @@
                 queijo mozarela e queijo parmesão,
                 além de um molho bechamel. Cada camada é cozida no forno até que o queijo derreta e a lasanha fique
                 dourada e deliciosa.</p>
+            <h3>17,99R$</h3>
         </div>
     </section>
     <section class="item-selecionado-cardapio collapse" id="collapsePasta">
@@ -128,6 +399,150 @@
                 focaccia tão especial é a maneira como ela é preparada e temperada. Após o processo de
                 fermentação da massa, ela é estendida em uma assadeira e, em seguida, é tradicionalmente perfurada
                 com os dedos para criar pequenos buracos na superfície.</p>
+            <h3>11,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseRavioli">
+        <img src="src/ravioli.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Ravioli: </strong>A Alquimia dos Sabores</h2>
+            <p>Nossos Ravioli Alquimia dos Sabores são uma verdadeira obra-prima culinária que combina de maneira
+                harmoniosa a arte da massa fresca recheada com uma variedade de ingredientes cuidadosamente
+                selecionados. Cada bocado é uma experiência de sabor única que conduz você a uma jornada gastronômica
+                mágica, onde cada ingrediente se funde em uma sinfonia de sabores.</p>
+            <h3>32,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapsePolenta">
+        <img src="src/polenta.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Polenta: </strong>Polenta Dourada da Nonna</h2>
+            <p>Nossa Polenta Dourada da Nonna é uma verdadeira homenagem à tradição italiana. Preparada com carinho a
+                partir dos melhores ingredientes, é uma explosão de sabores que aquece o coração e satisfaz o paladar.
+                Cada garfada é uma jornada gastronômica que evoca memórias de refeições familiares e acolhedoras, onde a
+                tradição se encontra com o prazer da comida.</p>
+            <h3>21,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseNegroni">
+        <img src="src/negroni.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Negroni: </strong>A Harmonia de Amargor e Doçura</h2>
+            <p>O Negroni é uma bebida que celebra a arte do equilíbrio, unindo a amargura do gin com o toque doce do
+                vermute e o caráter único do Campari. Cada gole é uma sinfonia de sabores que dançam no paladar,
+                proporcionando uma experiência refinada e inesquecível.</p>
+            <h3>30,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseBellini">
+        <img src="src/bellini.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Bellini: </strong>Uma Explosão Frutada de Elegância</h2>
+            <p>O Bellini é uma verdadeira explosão de frutas frescas e elegância. Com a suavidade do pêssego branco
+                combinada com o espumante, é como se você estivesse degustando a própria essência da sofisticação em um
+                copo. Cada gole é uma celebração das delícias da estação.</p>
+            <h3>43,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseManhattan">
+        <img src="src/Manhattan.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Manhattan: </strong>O Clássico dos Clássicos</h2>
+            <p>O Manhattan é um clássico atemporal que exala sofisticação. Com sua mistura cuidadosa de bourbon, vermute
+                doce e um toque de angostura, cada gole é como um passeio pelas ruas da cidade que nunca dorme. É a
+                prova de que a simplicidade bem executada pode resultar em uma experiência excepcional.</p>
+            <h3>25,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseMartini">
+        <img src="src/Martini.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Martini: </strong>A Elegância em Estado Líquido</h2>
+            <p>O Martini é a personificação da elegância em um copo. Com gin ou vodka, e uma pitada de vermute, é um
+                convite a uma viagem de sabores sutis e refinados. Cada gole é como uma obra de arte líquida que eleva o
+                espírito e desperta os sentidos.</p>
+            <h3>24,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseDaiquiri">
+        <img src="src/Daiquiri.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Daiquiri: </strong>O Refresco Tropical Clássico</h2>
+            <p>O Daiquiri é um clássico tropical que transporta você para praias de areias brancas e águas cristalinas.
+                Com rum, suco de limão fresco e um toque de açúcar, cada gole é uma explosão de frescor e sabor que faz
+                você se sentir de férias, mesmo estando a quilômetros de distância.</p>
+            <h3>55,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseMijito">
+        <img src="src/Mojito.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Mojito: </strong>O Coquetel Refrescante do Verão</h2>
+            <p>O Mojito é o coquetel que define o verão. Com a mistura revigorante de rum, hortelã fresca, limão, açúcar
+                e água com gás, é como um refúgio em um copo. Cada gole é uma explosão de frescura e vitalidade que
+                revitaliza o corpo e a alma. É a escolha perfeita para os dias quentes e ensolarados.</p>
+            <h3>34,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseTiramisu">
+        <img src="src/tiramisu.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Tiramisu: </strong>A Delicada Dança dos Sabores</h2>
+            <p>O Tiramisu é uma sobremesa que encanta os sentidos com sua dança delicada de sabores. Camadas de
+                biscoitos embebidos em café, intercaladas com um creme sedoso de queijo mascarpone, criam uma sinfonia
+                irresistível. Cada colherada é uma experiência culinária que eleva o paladar a uma doce e sofisticada
+                jornada.</p>
+            <h3>23,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseCannoli">
+        <img src="src/Cannoli.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Cannoli: </strong>A Crocância Recheada de Tradição</h2>
+            <p>Os Cannoli são uma iguaria italiana que combina a crocância da massa frita com um recheio suave e doce.
+                Cada mordida é uma explosão de texturas e sabores que evocam as tradições familiares mais profundas. É
+                uma verdadeira celebração da doçura em cada detalhe.</p>
+            <h3>15,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseCrostata">
+        <img src="src/Crostata.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Crostata: </strong>A Generosidade Frutada em Forma de Torta</h2>
+            <p>A Crostata é uma generosa expressão da doçura das frutas em forma de torta. Com uma massa que desmancha
+                na boca e um recheio de frutas frescas ou compotas, é uma experiência que aquece o coração e satisfaz o
+                paladar. Cada garfada é como um abraço acolhedor da culinária italiana.</p>
+            <h3>18,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseZabaione">
+        <img src="src/Zabaione.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Zabaione: </strong>A Espuma de Luxo e Sabor</h2>
+            <p>O Zabaione é uma espuma de luxo e sabor que envolve o paladar com sua textura leve e sabores
+                encantadores. Preparado com gemas de ovos, açúcar e vinho Marsala, é uma experiência indulgente que traz
+                uma sensação calorosa e reconfortante a cada colherada.</p>
+            <h3>19,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseSfogliatella">
+        <img src="src/Sfogliatella.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Sfogliatella: </strong> A Delícia Folhada da Itália</h2>
+            <p>A Sfogliatella é uma delícia folhada que conquista com suas camadas finas e crocantes. Recheada com uma
+                mistura doce e ricamente aromatizada de ricota e frutas cítricas, é uma explosão de texturas e sabores
+                que cativa os sentidos. Cada mordida é uma homenagem à tradição de confeitaria italiana.</p>
+            <h3>20,99R$</h3>
+        </div>
+    </section>
+    <section class="item-selecionado-cardapio collapse" id="collapseAmaretti">
+        <img src="src/Amaretti.png" alt="" class="macaraoPrincipal prato-selecionado">
+        <div class="texto-principal texto-baixo">
+            <h2><strong class="text-success">Amaretti: </strong>A Doçura Que Derrete na Boca</h2>
+            <p>Os Amaretti são pequenos tesouros de doçura que derretem na boca. Feitos com amêndoas moídas e claras de
+                ovos, são como pequenas nuvens de doçura e textura delicada. Cada mordida é uma experiência de sabor que
+                faz você se render à simplicidade e elegância da culinária italiana.</p>
+            <h3>27,99R$</h3>
         </div>
     </section>
 </div>
@@ -141,6 +556,12 @@
             <div class="card-body">
                 <h5 class="card-title text-success">Spaghetti à Carbonara</h5>
                 <p class="card-text">A Dança Cremosa dos Espaguetes, Pancetta e Queijo Pecorino!</p>
+                <div>
+                    <p>"Sua Carbonara é uma verdadeira obra-prima! A textura cremosa do molho à base de ovos e queijo,
+                        combinada com o sabor defumado da pancetta, fez desta refeição uma experiência inesquecível. A
+                        simplicidade dos ingredientes ressalta o amor e a dedicação à culinária italiana autêntica. Uma
+                        verdadeira indulgência para o paladar."</p>
+                </div>
                 <div class="preco-estrela">
                     <h5>12R$</h5>
                     <div class="preco-estrela">
@@ -160,6 +581,13 @@
             <div class="card-body">
                 <h5 class="card-title text-success">Pizza Mare e Monti</h5>
                 <p class="card-text">A Sinfonia Perfeita dos Sabores da Terra e do Mar!</p>
+                <div>
+                    <p>"A experiência de degustar a Pizza Mare e Monti no seu restaurante foi absolutamente incrível! A
+                        combinação de frutos do mar frescos, como camarões suculentos, com a riqueza dos cogumelos e o
+                        sabor do queijo derretido na massa crocante resultou em uma explosão de sabores. Fiquei
+                        encantado com o equilíbrio entre os ingredientes marinhos e terrestres. Definitivamente, um
+                        prato que merece ser experimentado."</p>
+                </div>
                 <div class="preco-estrela">
                     <h5>20R$</h5>
                     <div class="preco-estrela">
@@ -174,11 +602,16 @@
             </div>
         </div>
         <div class="card border-success" style="width: 18rem;">
-            <img src="src/lasagna.jpg"
-                class="card-img-top" alt="...">
+            <img src="src/lasagna.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title text-success">Lasagna</h5>
                 <p class="card-text">Camadas Douradas de Sabor com Tomate, Ricota e Molho Bechamel!</p>
+                <div>
+                    <p>"A Lasanha em seu restaurante é como uma viagem à Itália em um prato. As camadas perfeitamente
+                        cozidas de massa, queijo ricota, molho de carne rico e molho de tomate fresco criaram uma
+                        harmonia de sabores e texturas. É o tipo de prato que me faz querer voltar sempre. Uma delícia
+                        reconfortante que aquece o coração."</p>
+                </div>
                 <div class="preco-estrela">
                     <h5>17R$</h5>
                     <div class="preco-estrela">
@@ -195,6 +628,201 @@
     </div>
 </div>
 <!-- ----------------------------------- FIM DE UMA SECTION -----------------------------------  -->
+
+<div class="mx-6">
+    <!--Section: Contact v.2-->
+    <section class="mb-4" id="funcionamento">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4 mt-5 mb-5">Faça sua Reserva</h2>
+        <!--Section description-->
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Seu nome</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Seu email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-3">
+                            <div class="md-form mb-0">
+                                <input type="date" id="date" name="name" class="form-control">
+                                <label for="name" class="">Escolha um Dia</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-3">
+                            <div class="md-form mb-0">
+                                <input type="time" id="email" name="email" class="form-control" min="11:30" max="23:00">
+                                <label for="email" class="">Hora</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Detalhe de Contato</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                </form>
+
+                <div class="text-right text-md-left">
+                    <a class="btn btn-success">Reservar</a>
+                </div>
+                <div class="accordion accordion-flush mt-1" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Conheça nossa política de Cancelamento para Reservas
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Política de Cancelamento para Reservas<br> <br>
+
+                                No Mamma Mia Cucina, valorizamos a sua reserva e estamos ansiosos para proporcionar-lhe
+                                uma experiência culinária memorável. Para garantir a melhor experiência possível para
+                                todos os nossos clientes, implementamos a seguinte política de cancelamento para
+                                reservas: <br> <br>
+
+                                Cancelamento Gratuito: Você pode cancelar a sua reserva gratuitamente até [número de
+                                horas ou dias] antes do horário da reserva. <br> <br>
+
+                                Cancelamento Tardio ou Não Comparecimento:
+
+                                Cancelamentos feitos com menos de [número de horas ou dias] de antecedência ou não
+                                comparecimento resultarão em uma taxa de cancelamento no valor de [valor da taxa] por
+                                pessoa reservada. <br> <br>
+                                Modificações na Reserva:
+
+                                Entendemos que planos podem mudar. Caso deseje modificar a sua reserva, por favor, entre
+                                em contato conosco o mais cedo possível para que possamos acomodar as suas necessidades,
+                                sujeito à disponibilidade. <br> <br>
+                                Reservas para Grupos Grandes:
+
+                                Para reservas de grupos com [número de pessoas ou mais], solicitamos um aviso prévio de
+                                [número de dias] para cancelamentos ou modificações. Isso nos permite ajustar
+                                adequadamente a nossa capacidade e garantir um excelente serviço. <br> <br>
+                                Múltiplos Cancelamentos:
+
+                                Reservas frequentes seguidas de cancelamento tardio ou não comparecimento podem resultar
+                                em restrições futuras para fazer reservas no nosso restaurante. <br> <br>
+                                Depósito para Reservas Especiais:
+
+                                Para ocasiões especiais, como eventos privados ou feriados, podemos solicitar um
+                                depósito não reembolsável para garantir a sua reserva. As condições específicas serão
+                                discutidas caso a caso. <br> <br>
+                                Política de Tempo Limite da Reserva:
+
+                                Reservamos a sua mesa por um período máximo de [número de horas] a partir do horário da
+                                reserva. Caso deseje prolongar a sua estadia, pedimos que nos informe com antecedência e
+                                faremos o possível para acomodar a sua solicitação, sujeito à disponibilidade. <br> <br>
+                                Agradecemos pela sua compreensão e cooperação com a nossa política de cancelamento. Esta
+                                política visa garantir que todos os nossos clientes tenham uma experiência excepcional
+                                no Mamma Mia Cucina. Se tiver alguma dúvida ou precisar fazer uma alteração na sua
+                                reserva, não hesite em entrar em contato conosco. Estamos ansiosos para servi-lo e
+                                proporcionar-lhe uma refeição deliciosa e memorável.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <div class="col-md-6">
+                    <h4>Horário de Funcionamento</h4>
+                    <p>Segunda a Sexta: 11:30 - 22:00</p>
+                    <p>Sábado e Domingo: 12:00 - 23:00</p>
+                </div>
+            </div>
+            <!--Grid column-->
+
+        </div>
+    </section>
+</div>
+<!-- ----------------------------------- FIM DE UMA SECTION -----------------------------------  -->
+<main class="mx-6 historia" id="historia">
+    <div class="texto-principal ">
+        <h3>Sobre Nós</h3>
+        <p>No coração da Toscana, Maria, uma talentosa cozinheira, realizou seu sonho de abrir o "Mamma Mia Cucina", um
+            restaurante que homenageia sua mãe e compartilha a autêntica comida italiana. Com uma atmosfera acolhedora,
+            cardápio diversificado e atendimento familiar, o restaurante rapidamente se tornou um tesouro gastronômico
+            na região. Maria e sua equipe conquistaram fama internacional enquanto mantinham a qualidade e autenticidade
+            de cada prato. A história continua atraindo amantes da culinária de todo o mundo para esta pequena aldeia,
+            onde a tradição italiana é celebrada com amor e paixão. Buon appetito!</p>
+    </div>
+    <div>
+        <h3>Nossa Premiações 🏆</h3>
+        <ul>
+            <li>
+                Prêmio de Excelência em Culinária Italiana: Reconhecimento pela autenticidade e sabor excepcionais da
+                comida italiana servida no restaurante.
+            </li>
+            <li>
+                Melhor Restaurante da Toscana: Uma homenagem à sua localização na Toscana e à contribuição para a cena
+                gastronômica da região.
+            </li>
+            <li>
+                Prêmio de Hospitalidade e Atendimento ao Cliente: Pelo atendimento caloroso e acolhedor oferecido aos
+                clientes, fazendo com que se sintam parte da família.
+            </li>
+            <li>
+                Reconhecimento de Chef Destaque: Honrando Maria, a chef, pelo seu talento e dedicação à cozinha
+                italiana.
+            </li>
+            <li>
+                Melhor Carta de Vinhos Italianos: Destacando a seleção cuidadosa de vinhos locais e nacionais para
+                complementar as refeições.
+            </li>
+            <li>
+                Prêmio Sustentabilidade na Gastronomia: Reconhecendo os esforços do restaurante em apoiar práticas
+                sustentáveis na produção de alimentos.
+            </li>
+            <li>
+                Certificado de Excelência em Higiene e Segurança Alimentar: Pela priorização da segurança alimentar e o
+                cumprimento rigoroso das normas sanitárias.
+            </li>
+            <li>
+                Prêmio de Melhor Ambiente de Restaurante: Pela atmosfera aconchegante e autêntica que proporciona uma
+                experiência única aos clientes.
+            </li>
+            <li>
+                Prêmio de Destino Gastronômico Imperdível: Destacando a aldeia de Montefiori como um destino obrigatório
+                para os amantes da culinária italiana.
+            </li>
+        </ul>
+    </div>
+</main>
 <div class="mx-6 mais-avaliados" id="chefes">
     <h3 class="text-center mt-5 mb-5">Nossa Equipe de Chefes</h3>
     <div class="container-mais-avaliados">
@@ -234,6 +862,77 @@
     </div>
 </div>
 <!-- ----------------------------------- FIM DE UMA SECTION -----------------------------------  -->
+
+<!-- Contact Us Section -->
+<section class="Material-contact-section section-padding section-dark mt-5" id="faleconosco">
+    <div class="container">
+        <div class="row">
+            <!-- Section Titile -->
+            <h2 class="h1-responsive font-weight-bold text-center my-4 mt-5 mb-5">Fale Conosco</h2>
+        </div>
+        <div class="row">
+            <!-- Section Titile -->
+            <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                <p>Bem-vindo à nossa seção de contato! Estamos ansiosos para ouvir de você e estamos aqui para atender a
+                    todas as suas dúvidas, comentários ou sugestões. No Mamma Mia Cucina, valorizamos a comunicação
+                    direta com nossos clientes, pois isso nos ajuda a aprimorar nossos serviços e oferecer a melhor
+                    experiência possível.</p>
+
+                <div class="find-widget">
+                    Endereço: Cidade Universaria, Estaquio Gomes
+                </div>
+                <div class="find-widget">
+                    Telefone: 81 985649307
+                </div>
+                <div class="find-widget">
+                    Email: MammamiaCuccina@EmailIlustrativo.com
+                </div>
+            </div>
+            <!-- contact form -->
+            <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                <form class="shake" role="form" method="post" id="contactForm" name="contact-form"
+                    data-toggle="validator">
+                    <!-- Name -->
+                    <div class="form-group label-floating">
+                        <label class="control-label" for="name">Seu Nome</label>
+                        <input class="form-control" id="name" type="text" name="name" required
+                            data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- email -->
+                    <div class="form-group label-floating">
+                        <label class="control-label" for="email">Seu E-mail</label>
+                        <input class="form-control" id="email" type="email" name="email" required
+                            data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Subject -->
+                    <div class="form-group label-floating">
+                        <label class="control-label">Assunto</label>
+                        <input class="form-control" id="msg_subject" type="text" name="subject" required
+                            data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Message -->
+                    <div class="form-group label-floating">
+                        <label for="message" class="control-label">Sua Mensagem</label>
+                        <textarea class="form-control" rows="3" id="message" name="message" required
+                            data-error="Write your message"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Form Submit -->
+                    <div class="form-submit mt-5">
+                        <button class="btn btn-success" type="submit" id="form-submit"><i
+                                class="material-icons mdi mdi-message"></i>Enviar Mensagem</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ----------------------------------- FIM DE UMA SECTION -----------------------------------  -->
 <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 Mamma Mia Cucina, Inc</p>
@@ -245,11 +944,11 @@
         </a>
 
         <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#cardapio" class="nav-link px-2 text-body-secondary">Cardápio</a></li>
-            <li class="nav-item"><a href="#chefes" class="nav-link px-2 text-body-secondary">Chefes</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-            <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary">Sobre</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Twitter</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Instagram</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Facebook</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Whatsapp</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Telegram</a></li>
         </ul>
     </footer>
 </div>
@@ -263,18 +962,18 @@
         });
     });
     // Função para alternar a classe no elemento <body>
-        // Função para alternar o atributo data-bs-theme
-        function toggleTheme() {
-            const body = document.body;
-            const currentTheme = body.getAttribute('data-bs-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            body.setAttribute('data-bs-theme', newTheme);
-        }
+    // Função para alternar o atributo data-bs-theme
+    function toggleTheme() {
+        const body = document.body;
+        const currentTheme = body.getAttribute('data-bs-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        body.setAttribute('data-bs-theme', newTheme);
+    }
 
-        // Event listener para o botão
-        const themeToggleButton = document.getElementById('theme-toggle-button');
-        themeToggleButton.addEventListener('click', toggleTheme);
-        
+    // Event listener para o botão
+    const themeToggleButton = document.getElementById('theme-toggle-button');
+    themeToggleButton.addEventListener('click', toggleTheme);
+
 </script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 
