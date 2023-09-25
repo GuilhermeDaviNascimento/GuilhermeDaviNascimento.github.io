@@ -130,12 +130,19 @@ Destaque promoções em andamento, descontos ou programas de fidelidade. FALTA F
             <div class="modal-body">
                 <form class="row g-3">
                     <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="inputEmail4">
+                        <label for="inputCity" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="">
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="inputPassword4">
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Buscar</label>
+                        <select id="inputState" class="form-select" onchange="deliveryorretirar()">
+                            <option value="1">Delivery</option>
+                            <option value="2">Retirar</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">E-mail</label>
+                        <input type="text" class="form-control" id="">
                     </div>
                     <div class="d-flex flex-row lista-cardapio-pedidos">
                         <div class="col-12">
@@ -150,36 +157,36 @@ Destaque promoções em andamento, descontos ou programas de fidelidade. FALTA F
                         </div>
                         <div class="col-12">
                             <div class="d-flex flex-column lista-cardapio-pedidos">
-                                <label for="inputAddress" class="form-label">Pizza</label>
-                                <label for="inputAddress" class="form-label">Carbonara</label>
-                                <label for="inputAddress" class="form-label">Lasagna</label>
-                                <label for="inputAddress" class="form-label">Focaccia</label>
-                                <label for="inputAddress" class="form-label">Ravioli</label>
-                                <label for="inputAddress" class="form-label">Polenta</label>
+                                <label for="inputAddress" class="form-label">Negroni</label>
+                                <label for="inputAddress" class="form-label">Bellini</label>
+                                <label for="inputAddress" class="form-label">Manhattan</label>
+                                <label for="inputAddress" class="form-label">Martini</label>
+                                <label for="inputAddress" class="form-label">Daiquiri</label>
+                                <label for="inputAddress" class="form-label">Mijito</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="d-flex flex-column lista-cardapio-pedidos">
-                                <label for="inputAddress" class="form-label">Pizza</label>
-                                <label for="inputAddress" class="form-label">Carbonara</label>
-                                <label for="inputAddress" class="form-label">Lasagna</label>
-                                <label for="inputAddress" class="form-label">Focaccia</label>
-                                <label for="inputAddress" class="form-label">Ravioli</label>
-                                <label for="inputAddress" class="form-label">Polenta</label>
+                                <label for="inputAddress" class="form-label">Tiramisu</label>
+                                <label for="inputAddress" class="form-label">Cannoli</label>
+                                <label for="inputAddress" class="form-label">Crostata</label>
+                                <label for="inputAddress" class="form-label">Zabaione</label>
+                                <label for="inputAddress" class="form-label">Sfogliatella</label>
+                                <label for="inputAddress" class="form-label">Amaretti</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
                         <label for="inputAddress2" class="form-label">Pedido</label>
-                        <input type="text" class="form-control" id="inputAddress2">
+                        <input type="text" class="form-control" id="">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="delivery">
                         <label for="inputCity" class="form-label">Endereço</label>
                         <input type="text" class="form-control" id="inputCity">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="delivery">
                         <label for="inputState" class="form-label">Bairro</label>
-                        <select id="inputState" class="form-select">
+                        <select id="inputZip" class="form-select">
                             <option selected>Escolha</option>
                             <option>Poço</option>
                             <option>Jaraguá</option>
@@ -232,9 +239,9 @@ Destaque promoções em andamento, descontos ou programas de fidelidade. FALTA F
                             <option>Ipioca</option>
                         </select>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2" id="delivery">
                         <label for="inputZip" class="form-label">CEP</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <input type="text" class="form-control" id="inputAddress2">
                     </div>
                 </form>
             </div>
@@ -942,13 +949,12 @@ Destaque promoções em andamento, descontos ou programas de fidelidade. FALTA F
                 <use xlink:href="#bootstrap" />
             </svg>
         </a>
-
         <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="https://www.yelp.com.br/são-paulo" class="nav-link px-2 text-body-secondary">Yelp</a></li>
+            <li class="nav-item"><a href="https://www.tripadvisor.com.br" class="nav-link px-2 text-body-secondary">TripAdvisor</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Twitter</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Instagram</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Facebook</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Whatsapp</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Telegram</a></li>
         </ul>
     </footer>
 </div>
@@ -973,7 +979,18 @@ Destaque promoções em andamento, descontos ou programas de fidelidade. FALTA F
     // Event listener para o botão
     const themeToggleButton = document.getElementById('theme-toggle-button');
     themeToggleButton.addEventListener('click', toggleTheme);
-
+    
+    function deliveryorretirar(){
+    if (document.getElementById('inputState').value === "1"){
+         document.getElementById('inputAddress2').disabled = false;
+         document.getElementById('inputCity').disabled = false;
+         document.getElementById('inputZip').disabled = false;
+     } else{
+         document.getElementById('inputAddress2').setAttribute('disabled','');
+         document.getElementById('inputCity').setAttribute('disabled','');
+         document.getElementById('inputZip').setAttribute('disabled','');
+    }
+}
 </script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 
