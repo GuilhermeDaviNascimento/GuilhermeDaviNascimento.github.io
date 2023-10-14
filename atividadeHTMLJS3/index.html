@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="Digite a string">
+        <button onclick="main()">Enviar</button>
+        <label for=""></label>
+    </div>
+    <label for="">
+        FUNÇÃO: <br> <br>
+        function contadorVogais(string) { <br>
+        ⠀⠀⠀⠀let stringsplitada = string.split('') <br>
+        ⠀⠀⠀⠀let vogais = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'] <br>
+        ⠀⠀⠀⠀let contador = 0 <br>
+        ⠀⠀⠀⠀stringsplitada.forEach(letra => { <br>
+        ⠀⠀⠀⠀⠀⠀⠀⠀vogais.forEach(vogal => { <br>
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀if (letra == vogal){ <br>
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀contador++ <br>
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀} <br>
+        ⠀⠀⠀⠀⠀⠀⠀⠀}); <br>
+        ⠀⠀⠀⠀}); <br>
+        ⠀⠀⠀⠀return contador + ' vogais' <br>
+        }
+    </label>
+</body>
+</html>

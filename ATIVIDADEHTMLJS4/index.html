@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="calcular()">
+    <div class="conteiner">
+        <div class="conteudointerno">
+            <div>
+                <label for="" class="textoconteudocima">Categoria:</label> <select name="" id="" class="categoria">
+                    <option value="Mercado">Mercado</option>
+                    <option value="Transportes">Transportes</option>
+                    <option value="Contas">Contas</option>
+                </select>
+            </div>
+            <div>
+                <label for="" class="textoconteudocima">Valor:</label> <input type="number" name="" id="" class="valor">
+            </div>
+            <div>
+
+                <label for="" class="textoconteudocima">Data:</label> <input type="date" name="" id="" class="data">
+            </div>
+            <div>
+                <button onclick="add()">Adicionar</button>
+                <button onclick="calcular()">Calcular</button>
+            </div>
+            <table border="1" class="tabela">
+                <th colspan="3">Extrato Bancário</th>
+            </table>
+        </div>
+        <div class="resumo">
+            <h3>Resumo</h3>
+            <div>
+                <label for="">Total: </label><label for="" class="total"></label>
+            </div>
+            <details>
+                <summary>
+                    Ver gastos em cada mês
+                </summary>
+                <p>
+                    <label for="gastosJaneiro">Total no mês de Janeiro:</label> <label for=""
+                        class="gastosJaneiro"></label><br>
+
+                    <label for="gastosFevereiro">Total no mês de Fevereiro:</label> <label for=""
+                        class="gastosFevereiro"></label><br>
+
+                    <label for="gastosMarço">Total no mês de Março:</label> <label for=""
+                        class="gastosMarço"></label><br>
+
+                    <label for="gastosAbril">Total no mês de Abril:</label> <label for=""
+                        class="gastosAbril"></label><br>
+
+                    <label for="gastosMaio">Total no mês de Maio:</label> <label for="" class="gastosMaio"></label><br>
+
+                    <label for="gastosJunho">Total no mês de Junho:</label> <label for=""
+                        class="gastosJunho"></label><br>
+
+                    <label for="gastosJulho">Total no mês de Julho:</label> <label for=""
+                        class="gastosJulho"></label><br>
+
+                    <label for="gastosAgosto">Total no mês de Agosto:</label> <label for=""
+                        class="gastosAgosto"></label><br>
+
+                    <label for="gastosSetembro">Total no mês de Setembro:</label> <label for=""
+                        class="gastosSetembro"></label><br>
+
+                    <label for="gastosOutubro">Total no mês de Outubro:</label> <label for=""
+                        class="gastosOutubro"></label><br>
+
+                    <label for="gastosNovembro">Total no mês de Novembro:</label> <label for=""
+                        class="gastosNovembro"></label><br>
+
+                    <label for="gastosDezembro">Total no mês de Dezembro:</label> <label for=""
+                        class="gastosDezembro"></label><br>
+                </p>
+            </details>
+            <div>
+                <label for="">Total gasto com mercado:</label> <label for="" class="totalmercado"></label>
+            </div>
+            <div>
+                <label for="">Total gasto com transporte:</label> <label for="" class="totaltransporte"></label>
+            </div>
+            <div>
+                <label for="">Total gasto com contas:</label> <label for="" class="totalcontas"></label>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
