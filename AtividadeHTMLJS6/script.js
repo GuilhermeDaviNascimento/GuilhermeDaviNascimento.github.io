@@ -10,22 +10,24 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
 });
 
-// Obtenha todos os elementos de checkbox
-var checkboxes = document.querySelectorAll('.check');
-var limit = 3; // Defina o limite desejado
-var checkedCheckboxes = [];
-
-// Adicione um ouvinte de evento para cada checkbox
-checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
-        checkedCheckboxes = Array.from(checkboxes).filter(checkbox => checkbox.checked);
-        
-        if (checkedCheckboxes.length > limit) {
-            this.checked = false; // Desativa o checkbox se o limite for excedido
-        }
-    });
-});
-
 function sucess(){
     document.querySelector(".sucess").style.display = 'block';
 }
+
+const checkboxes = document.querySelectorAll('.check');
+let limit = 3;
+
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+        let checkedCount = 0;
+        checkboxes.forEach(input => {
+            if (input.checked) {
+                checkedCount++;
+            }
+        });
+
+        if (checkedCount > limit) {
+            checkbox.checked = false;
+        }
+    });
+});

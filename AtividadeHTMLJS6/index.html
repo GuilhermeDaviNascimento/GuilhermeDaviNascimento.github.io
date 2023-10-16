@@ -66,22 +66,22 @@
                     <div>
                         <label for="">Atividades Extracurricular: </label>
                         <div>
-                            <input type="checkbox" name="" id="informatica" class="check">Informática
+                            <input type="checkbox" name="extra" id="informatica" class="check">Informática
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="musica" class="check">Música
+                            <input type="checkbox" name="extra" id="musica" class="check">Música
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="balet" class="check">Balet
+                            <input type="checkbox" name="extra" id="balet" class="check">Balet
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="pintura" class="check">Pintura
+                            <input type="checkbox" name="extra" id="pintura" class="check">Pintura
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="judo" class="check">Judô
+                            <input type="checkbox" name="extra" id="judo" class="check">Judô
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="futebol" class="check">Futebol
+                            <input type="checkbox" name="extra" id="futebol" class="check">Futebol
                         </div>
                     </div>
                 </div>
@@ -96,5 +96,28 @@
         <h1>Cadastro Realizado com Sucesso!</h1>
     </div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function limitCheckboxSelection(groupName, limit) {
+            const checkboxes = document.querySelectorAll(`input[name="${groupName}"]`);
+            checkboxes.forEach((checkbox) => {
+                checkbox.addEventListener('change', () => {
+                    const checkedCount = document.querySelectorAll(`input[name="${groupName}"]:checked`).length;
+
+                    if (checkedCount > limit) {
+                        checkbox.checked = false;
+                    }
+                });
+            });
+        }
+        const checkboxSetups = [
+            { groupName: "extra", limit: 3 },
+        ];
+
+        checkboxSetups.forEach((setup) => {
+            limitCheckboxSelection(setup.groupName, setup.limit);
+        });
+    });
+</script>
 
 </html>
