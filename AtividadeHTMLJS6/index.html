@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="some-form" onsubmit="sucess()">
+        <div class="conteiner">
+            <div class="conteinerdados">
+                <p> <strong>Dados Pessoais:</strong></p>
+                <div>
+                    <label for="" class="labeldedados">Nome do Aluno: </label> <input type="text" required>
+                </div>
+                <div>
+                    <label for="" class="labeldedados">Nascimento: </label> <input type="date" required
+                        onclick="getdayandinsert()" id="inputnascimento">
+                </div>
+                <div>
+                    <label for="" class="labeldedados">Nome da Mãe: </label> <input type="text" required>
+                </div>
+                <div>
+                    <label for="" class="labeldedados">Nome do Pai: </label> <input type="text" required>
+                </div>
+                <div class="conteinerTelefone">
+                    <label for="" class="labeldedados">Telefone: </label>
+                    <div><label for="" class="labeltelefone">DDD:</label><input type="text" class="inputtelefone"
+                            id="DDD"
+                            pattern="11|12|13|14|15|16|17|18|19|21|22|24|27|28|31|32|33|34|35|37|38|41|42|43|44|45|46|47|48|49|51|53|54|55|61|62|64|63|65|66|67|68|69|71|73|74|75|77|79|81|82|83|84|85|88|86|89|91|93|94|95|96|97|98|99"
+                            required>
+                    </div>
+                    <div><label for="" class="labeltelefone">Telefone:</label><input type="text" class="inputtelefone"
+                            style="width: 100px;"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                            required> </div>
+                    <div><label for="" class="labeltelefone">Ramal:</label><input type="text" class="inputtelefone"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                            required>
+                    </div>
+                </div>
+                <div>
+                    <label for="emailinput" class="labeldedados">E-mail:</label>
+                    <input type="text" required id="emailinput" pattern=".*@.*\..*">
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; border: solid 1px black; padding: 10px; width: 500px;">
+                <p><strong>Informações de Matrícula: </strong></p>
+                <div class="conteinerinfomatricula">
+                    <div class="conteinerserie">
+                        <label for="">Série: </label> <select name="" id="" required>
+                            <option value="Pré-escolar">Pré-escolar</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Turno: </label>
+                        <div>
+                            <input type="radio" name="radio" id="" required>Manhã
+                        </div>
+                        <div><input type="radio" name="radio" id="" required>Tarde</div>
+                    </div>
+                    <div>
+                        <label for="">Atividades Extracurricular: </label>
+                        <div>
+                            <input type="checkbox" name="" id="informatica" class="check">Informática
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="musica" class="check">Música
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="balet" class="check">Balet
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="pintura" class="check">Pintura
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="judo" class="check">Judô
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="futebol" class="check">Futebol
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: max-content;">
+                <button type="submit">Enviar formulário</button>
+                <button type="button" onclick="window.location.reload(true);">Limpar Campos</button>
+            </div>
+        </div>
+    </form>
+    <div class="sucess">
+        <h1>Cadastro Realizado com Sucesso!</h1>
+    </div>
+</body>
+
+</html>

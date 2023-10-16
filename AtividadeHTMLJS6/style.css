@@ -1,0 +1,67 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    display: inline-block;
+    width: 150px;
+}
+
+.labeldedados{
+    text-align: right;
+}
+.conteinerTelefone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    gap: 10px;
+}
+.labeltelefone{
+    width: max-content;
+}
+
+.inputtelefone{
+    width: 50px;
+}
+.conteinerdados{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.conteinerinfomatricula{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.conteinerserie{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 100px;
+}
+
+input:invalid {
+    border: 1px dashed red;
+  }
+  
+  input:valid {
+    border: 1px solid black;
+  }
+
+  button{
+    margin: 10px;
+  }
+
+  .sucess{
+    display: none;
+  }
