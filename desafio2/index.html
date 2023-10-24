@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f642.png" alt="" id="emoji">
+</body>
+<script>
+    document.getElementById("emoji").addEventListener("mouseover", function(){
+        document.getElementById("emoji").src = "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f60e.png"
+    })
+    document.getElementById("emoji").addEventListener("mouseleave", function(){
+        document.getElementById("emoji").src = "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f642.png"
+    })
+</script>
+</html>
