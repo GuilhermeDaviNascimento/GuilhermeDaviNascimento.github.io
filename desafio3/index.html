@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <input type="text" id="tarefas">
-    <ol id="lista"></ol>
+    <div class="conteiner">
+        <input type="text" id="tarefas" pattern=".*\S+.*">
+        <ol id="lista"><th>To-Do-List</th></ol>
+    </div>
 </body>
 <script>
-    document.getElementById("tarefas").addEventListener("keypress", function(e){
-        if (e.key === "Enter" && document.getElementById("tarefas").value !== ""){
+    document.getElementById("tarefas").addEventListener("keypress", function (e) {
+        const pattern = /^(?!\s*$).+/;
+        if (e.key === "Enter" && document.getElementById("tarefas").value !== "" && pattern.test(document.getElementById("tarefas").value)) {
             document.getElementById("lista").innerHTML += `<li>${document.getElementById("tarefas").value}</li>`
+            document.getElementById("tarefas").value = ""
         }
     })
-
 </script>
+<style>
+    body {
+        background-color: #121212;
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    input,
+    input:focus {
+        font-family: 'Inter', sans-serif;
+        height: 20px;
+        border: 1px solid white;
+        outline: none;
+        border-radius: 5px;
+        background-color: #121212;
+        color: white;
+    }
+</style>
+
 </html>

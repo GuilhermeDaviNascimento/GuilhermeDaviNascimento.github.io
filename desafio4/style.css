@@ -21,3 +21,8 @@ body{
     width: 414px;
     height: 414px;
 }
+
+.miniaturas:hover{
+    scale: 1.1;
+    transition: scale 100ms linear;
+}
