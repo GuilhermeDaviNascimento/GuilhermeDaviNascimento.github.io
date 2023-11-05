@@ -1,0 +1,79 @@
+#carouselExampleIndicators{
+    margin-top: 20px;
+    width: 350px;
+    height: 250px;
+}
+#carroimagem1, #carroimagem2, #carroimagem3{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+}
+#dados{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.conteiner{
+    margin-top: 15px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+input{
+    width: 80%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.serach{
+    display: flex;
+}
+
+button{
+    width: 20%;
+}
+
+.marcaModelo{
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+}
+
+#modelo{
+    font-size: x-large;
+    font-weight: bold;
+}
+.conteinerdadoscima{
+    display: flex;
+    justify-content: space-between;
+}
+
+.valorcarro{
+    font-weight: bold;
+    color: #0d6efd;
+    display: flex;
+    align-items:end;
+}
+
+label{
+    display: inline-block;
+    text-align: center;
+}
+
+#marca{
+    display: flex;
+}
+
+.hidden{
+    visibility: hidden;
+}
